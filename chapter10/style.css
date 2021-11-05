@@ -65,3 +65,45 @@ footer {
   height: 50px; /* 高さ50px */
   background-color: #aaa;
 }
+
+/* ここからレスポンシブ適用 */
+@media screen and (max-width:768px) {
+
+  header {
+    height: 50px; /* 高さ50 */
+  }
+
+  main {
+    width: 100%; /* 横幅100% */
+    margin: 50px auto;
+    display: block; /* Flexbox解除 */
+  }
+
+  .step-box {
+    width: 90%; /* 横幅90% */
+    margin: 20px auto;
+  }
+
+  .step-box:last-child {
+    margin: 20px auto;
+  }  
+
+  .step-img1 {
+    height: 150px; /* 高さ150 */
+    background-position: center; /* 中央表示 */
+  }
+  
+  .step-img2 {
+    height: 150px; /* 高さ150 */
+    background-position: center; /* 中央表示 */
+  }
+  
+  .step-img3 {
+    height: 150px; /* 高さ150 */
+    background-position: center; /* 中央表示 */
+  }
+
+  footer {
+    height: 50px; /* 高さ50 */
+  }
+} 
